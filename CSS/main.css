@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*Propiedades Body*/
+
+body{
+  background-image: linear-gradient(to left, red, yellow);
+}
+
+.padre{
+  display: flex;
+}
+
+.cajita{
+  width: 150px;
+  height: 150px;
+  background-color: black;
+  margin: 30px;
+}
+
+.uno{
+  border: green solid 5px;
+}
+
+.dos{
+  border: red solid 5px;
+}
+
+/*propiedades de animación*/
+.container{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+img{
+  width: 20%;
+}
+
+/*Animación corazón*/
+.agrandar{
+  animation-name: agrandar;
+  animation-iteration-count: infinite;
+  animation-duration: 0.1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+@keyframes agrandar{
+  from{
+    transform: scale(1.0);
+  }
+  to{
+    transform: scale(1.1);
+  }
+}
+
+/*Animación diamante*/
+.aparecer{
+  animation-name: aparecer;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-timing-function: ;
+  animation-direction: alternate;
+}
+
+@keyframes aparecer{
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}
